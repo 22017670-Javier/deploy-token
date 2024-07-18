@@ -215,6 +215,7 @@ export class TokenService {
     const receipt = await this.web3.eth.sendSignedTransaction(
       signed.rawTransaction,
     );
+    
     return receipt;
   }
 
